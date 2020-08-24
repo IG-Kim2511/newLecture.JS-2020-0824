@@ -66,7 +66,7 @@ window.addEventListener("load", function () {
   };
 });
 
-//C36 . Ex9-다중 노드선택 방법과 일괄삭제, 노드의 자리바꾸기
+//C36. Ex9-다중 노드선택 방법과 일괄삭제, 노드의 자리바꾸기
 window.addEventListener("load", function () {
   var section = document.querySelector("#section9");
 
