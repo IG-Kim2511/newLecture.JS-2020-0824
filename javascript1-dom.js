@@ -1,4 +1,4 @@
-//Ex1 : 계산기 프로그램
+//C24.Ex1 : 계산기 프로그램
 window.addEventListener("load", function () {
   var txtX = document.getElementById("txt-x");
   var txtY = document.getElementById("txt-y");
@@ -7,10 +7,15 @@ window.addEventListener("load", function () {
 
   btnAdd.onclick = function () {
     console.log("ad");
+
+    let x = parseInt(txtX.value);
+    let y = parseInt(txtY.value);
+
+    txtSum.value = x + y;
   };
 });
 
-//Ex2 : 엘리먼트 선택방법 개선하기
+//C25.Ex2 : 상위노드에 id넣기
 window.addEventListener("load", function () {
   var section2 = document.getElementById("section2");
   var txtX = section2.getElementsByClassName("txt-x")[0];
@@ -34,7 +39,7 @@ window.addEventListener("load", function () {
     txtSum.value = x + y;
   };
 });
-//Ex3 : Selectors API Level1
+//C26.Ex3 :querySelector
 window.addEventListener("load", function () {
   var section3 = document.getElementById("section3");
   var txtX = section3.querySelector("input[name='x']");
@@ -50,7 +55,7 @@ window.addEventListener("load", function () {
   };
 });
 
-//Ex4 : childeNodes를 이용한 노드 선택
+//c27.Ex4 : Node.children input1.value = "hello";
 window.addEventListener("load", function () {
   var section4 = document.querySelector("#section4");
   var box = section4.querySelector(".box");
@@ -62,7 +67,7 @@ window.addEventListener("load", function () {
   input2.value = "okay";
 });
 
-//Ex5 : 엘리먼트 노드의 속성& CSS 속성 변경
+//c30.Ex5  :node의 attribute 변경. srcInput
 window.addEventListener("load", function () {
   var section = document.querySelector("#section5");
   var srcInput = section.querySelector(".src-input");
@@ -78,7 +83,7 @@ window.addEventListener("load", function () {
   };
 });
 
-//Ex6 : 메뉴추가(createTextNode, Element)
+//c.32.Ex6 : 메뉴추가(createTextNode, Element)
 window.addEventListener("load", function () {
   var section = document.querySelector("#section6");
 
@@ -108,7 +113,7 @@ window.addEventListener("load", function () {
   };
 });
 
-//Ex7 : 노드 복제와 템플릿 태그
+//c34.Ex7 : 34 cloneNode.importNode.template
 window.addEventListener("load", function () {
   var notices = [
     {
@@ -139,7 +144,7 @@ window.addEventListener("load", function () {
   templateButton.onclick = function () {};
 });
 
-//Ex8-노드 삽입과 바꾸기
+//c35. Ex8-firstChild, previousSibling, 노드 삽입(insertBefore, insertAdjacentElement)
 window.addEventListener("load", function () {
   var section = document.querySelector("#section8");
 
@@ -180,7 +185,7 @@ window.addEventListener("load", function () {
   };
 });
 
-//C36. Ex9-다중 노드선택 방법과 일괄삭제, 노드의 자리바꾸기
+//C36. Ex9-노드 (input[type='checkbox']. for)
 window.addEventListener("load", function () {
   var section = document.querySelector("#section9");
 
